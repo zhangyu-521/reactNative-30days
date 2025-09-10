@@ -1,4 +1,3 @@
-import { ThemedText } from '@/components/ThemedText';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ScrollView,
@@ -92,21 +91,13 @@ export default function Day1Screen() {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <ThemedText type="title" style={{ fontSize: 66, fontWeight: 200 }}>
-          {time.toFixed(2)}
-        </ThemedText>
+        <Text style={{ fontSize: 66, fontWeight: 200 }}>{time.toFixed(2)}</Text>
         <Text style={{ fontSize: 20, color: '#666', marginTop: 10 }}>
           间隔: {currentInterval.toFixed(2)}s
         </Text>
       </View>
 
-      <View
-        style={{
-          flexDirection: 'row',
-          justifyContent: 'space-around',
-          marginVertical: 20,
-        }}
-      >
+      <View style={styles.buttonContainer}>
         <TouchableOpacity
           onPress={() => handleCount()}
           style={[styles.btn, status === 2 && styles.resetBtn]}
@@ -148,8 +139,8 @@ export default function Day1Screen() {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: '#f5f5f5',
-    height: '100%',
   },
 
   content: {
@@ -158,6 +149,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     height: '30%',
     width: '100%',
+  },
+
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    paddingVertical: 20,
+    height: 120, // 固定最小高度，防止布局跳动
+    // backgroundColor: 'blue',
   },
 
   btn: {
@@ -192,7 +191,8 @@ const styles = StyleSheet.create({
   },
 
   list: {
-    // alignItems: 'center',
+    flex: 1,
+    backgroundColor: '#f5f5f5',
   },
 
   listItem: {
