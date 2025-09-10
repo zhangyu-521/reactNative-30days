@@ -9,3 +9,9 @@
 - 轮播图
 <img width="200" src="./gifs/day2.gif">
 
+
+
+
+<!-- 鸣谢 -->
+# **鸣谢**
+[30-days-of-react-native](https://github.com/fangwei716/30-days-of-react-native)

@@ -73,10 +73,7 @@ export default function RootLayout() {
           }}
         />
         <Stack.Screen name="day1" options={createPageOptions('计时器')} />
-        <Stack.Screen
-          name="day2"
-          options={createPageOptions('Day 2 - Components')}
-        />
+        <Stack.Screen name="day2" options={createPageOptions('轮播图')} />
         <Stack.Screen
           name="day3"
           options={createPageOptions('Day 3 - State')}
