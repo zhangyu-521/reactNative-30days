@@ -17,14 +17,14 @@ export default function HomeScreen() {
       icon: 'house.fill' as const,
       iconColor: 'green',
       title: 'Day 1',
-      description: 'Introduction to React Native',
+      description: '计秒器',
       route: '/day1' as const,
     },
     {
       icon: 'paperplane.fill' as const,
       iconColor: 'blue',
       title: 'Day 2',
-      description: 'Components and Props',
+      description: '轮播图',
       route: '/day2' as const,
     },
     {
