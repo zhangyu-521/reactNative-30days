@@ -2,10 +2,10 @@
 
 
 ## day1
-计时器
-<img src="./gifs/day1.gif">
+- 计时器
+<img width="200" src="./gifs/day1.gif">
 
 ## day2
-轮播图
-<img src="./gifs/day2.gif">
+- 轮播图
+<img width="200" src="./gifs/day2.gif">
 
