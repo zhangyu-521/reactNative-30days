@@ -43,22 +43,10 @@ npm run web
 ### Day 2 - 轮播图
 <img width="200" src="./gifs/day2.gif" alt="Day 2 Carousel Demo">
 
-### Day 3 - 待完成
-（更多项目正在开发中...）
+### Day 3 - twitter进入动画
+<img width="200" src="./gifs/day3.gif" alt="Day 2 twitter animation">
 
-## 🏗️ 项目结构
 
-```
-myexpoapp/
-├── app/                 # 应用页面和路由
-│   ├── day1.tsx        # Day 1 计时器页面
-│   ├── day2.tsx        # Day 2 轮播图页面
-│   └── (tabs)/         # 底部标签页导航
-├── components/         # 可复用组件
-├── assets/            # 静态资源
-├── gifs/              # 演示 GIF
-└── constants/         # 常量配置
-```
 
 ## 🛠️ 技术栈
 
@@ -68,9 +56,6 @@ myexpoapp/
 - **类型检查**: TypeScript
 - **代码质量**: ESLint
 
-## 📄 许可证
-
-这个项目使用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
 ## 🙏 鸣谢
 

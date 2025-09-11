@@ -21,6 +21,9 @@ const MAPPING = {
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  'brain.fill': 'branding-watermark',
+  'box.truck.badge.clock.fill': 'account-box',
+  '0.circle.hi': 'cloud',
 } as IconMapping;
 
 /**

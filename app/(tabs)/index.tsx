@@ -31,7 +31,7 @@ export default function HomeScreen() {
       icon: 'chevron.right' as const,
       iconColor: 'orange',
       title: 'Day 3',
-      description: 'State and Lifecycle',
+      description: '进入app的动画',
       route: '/day3' as const,
     },
     {
