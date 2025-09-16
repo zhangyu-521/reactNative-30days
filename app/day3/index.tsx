@@ -71,7 +71,7 @@ export default function Day3Screen() {
     setRefreshing(true);
     // 模拟网络请求
     setTimeout(() => {
-      setData((d) => [...d, `Day${d.length + 1}`]);
+      setData((d) => [`Day${d.length + 1}`, ...d]);
       setRefreshing(false);
     }, 1500);
   }, []);
@@ -118,6 +118,7 @@ export default function Day3Screen() {
         )}
         refreshControl={
           <RefreshControl
+            progressViewOffset={50}
             refreshing={refreshing}
             onRefresh={handleRefresh}
             colors={['#0051ffff']} // 安卓圈圈颜色

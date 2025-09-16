@@ -72,7 +72,7 @@ export default function RootLayout() {
             animation: 'none',
           }}
         />
-        <Stack.Screen name="day1" options={createPageOptions('计时器')} />
+        <Stack.Screen name="day1" />
         <Stack.Screen name="day2" options={createPageOptions('轮播图')} />
         <Stack.Screen name="day3" />
         <Stack.Screen
