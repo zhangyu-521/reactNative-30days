@@ -44,7 +44,13 @@ npm run web
 <img width="200" src="./gifs/day2.gif" alt="Day 2 Carousel Demo">
 
 ### Day 3 - twitter进入动画
-<img width="200" src="./gifs/day3.gif" alt="Day 2 twitter animation">
+<img width="200" src="./gifs/day3.gif" alt="Day 3 twitter animation">
+
+### Day 4 - 相机
+手机上运行
+
+### Day 5 - twitter进入动画
+<img width="200" src="./gifs/day5.gif" alt="Day 5 twitter animation">
 
 
 

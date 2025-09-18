@@ -1,7 +1,7 @@
 import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
 import { useRef } from 'react';
-import { Pressable, StyleSheet } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -38,8 +38,22 @@ export default function HomeScreen() {
       icon: 'chevron.left.forwardslash.chevron.right' as const,
       iconColor: 'purple',
       title: 'Day 4',
-      description: 'Handling Events',
+      description: '相机',
       route: '/day4' as const,
+    },
+    {
+      icon: 'house.fill' as const,
+      iconColor: 'yellow',
+      title: 'Day 5',
+      description: '拖动',
+      route: '/day5' as const,
+    },
+    {
+      icon: 'house.fill' as const,
+      iconColor: 'skyblue',
+      title: 'Day 6',
+      description: '本地存储',
+      route: '/day6' as const,
     },
   ];
   type getKey = (typeof days)[number]['route'];
@@ -72,11 +86,12 @@ export default function HomeScreen() {
           />
         }
       >
-        <ThemedView
+        <View
           style={{
             flexDirection: 'row',
             flexWrap: 'wrap',
-            justifyContent: 'center',
+            justifyContent: 'space-around',
+            gap: 8,
           }}
         >
           {days.map((item) => (
@@ -103,7 +118,7 @@ export default function HomeScreen() {
               </ThemedText>
             </Pressable>
           ))}
-        </ThemedView>
+        </View>
       </ParallaxScrollView>
     </ThemedView>
   );
@@ -118,8 +133,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 8,
-    margin: 8,
-    padding: 8,
     backgroundColor: '#f9f9f9',
   },
   titleContainer: {

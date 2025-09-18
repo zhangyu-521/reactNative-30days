@@ -79,6 +79,8 @@ export default function RootLayout() {
           name="day4"
           options={createPageOptions('Day 4 - Events')}
         />
+        <Stack.Screen name="day5" options={createPageOptions('拖动')} />
+        <Stack.Screen name="day6" />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
