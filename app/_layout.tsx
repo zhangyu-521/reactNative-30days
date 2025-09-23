@@ -10,6 +10,7 @@ import { View } from 'react-native';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 // 共享的头部背景组件
 const SharedHeaderBackground = () => (
@@ -52,36 +53,40 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack
-        screenOptions={{
-          // 默认不显示 header，只在需要的页面显示
-          headerShown: false,
-          // 使用快速淡入淡出动画
-          animation: 'fade',
-          animationDuration: 100,
-          // 禁用手势返回，使用按钮返回更可控
-          gestureEnabled: false,
-        }}
-      >
-        <Stack.Screen
-          name="(tabs)"
-          options={{
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        <Stack
+          screenOptions={{
+            // 默认不显示 header，只在需要的页面显示
             headerShown: false,
-            // 禁用动画，立即切换
-            animation: 'none',
+            // 使用快速淡入淡出动画
+            animation: 'fade',
+            animationDuration: 100,
+            // 禁用手势返回，使用按钮返回更可控
+            gestureEnabled: false,
           }}
-        />
-        <Stack.Screen name="day1" />
-        <Stack.Screen name="day2" options={createPageOptions('轮播图')} />
-        <Stack.Screen name="day3" />
-        <Stack.Screen name="day4" options={createPageOptions('相机')} />
-        <Stack.Screen name="day5" options={createPageOptions('拖动')} />
-        <Stack.Screen name="day6" options={createPageOptions('本地存储')} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+        >
+          <Stack.Screen
+            name="(tabs)"
+            options={{
+              headerShown: false,
+              // 禁用动画，立即切换
+              animation: 'none',
+            }}
+          />
+          <Stack.Screen name="day1" />
+          <Stack.Screen name="day2" options={createPageOptions('轮播图')} />
+          <Stack.Screen name="day3" />
+          <Stack.Screen name="day4" options={createPageOptions('相机')} />
+          <Stack.Screen name="day5" options={createPageOptions('拖动')} />
+          <Stack.Screen name="day6" options={createPageOptions('本地存储')} />
+          <Stack.Screen name="day7" options={createPageOptions('图片选择')} />
+          <Stack.Screen name="day8" options={createPageOptions('系统振动')} />
+          <Stack.Screen name="+not-found" />
+        </Stack>
+        <StatusBar style="auto" />
+      </ThemeProvider>
+    </GestureHandlerRootView>
   );
 }
 

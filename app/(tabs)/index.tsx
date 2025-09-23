@@ -55,6 +55,20 @@ export default function HomeScreen() {
       description: '本地存储',
       route: '/day6' as const,
     },
+    {
+      icon: 'house.fill' as const,
+      iconColor: 'skyblue',
+      title: 'Day 7',
+      description: '图片选择',
+      route: '/day7' as const,
+    },
+    {
+      icon: 'house.fill' as const,
+      iconColor: 'skyblue',
+      title: 'Day 8',
+      description: '系统震动',
+      route: '/day8' as const,
+    },
   ];
   type getKey = (typeof days)[number]['route'];
 

@@ -2,11 +2,10 @@ import Constants from 'expo-constants';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
-  const t = Constants.expoConfig;
-  console.log(t);
+  const config = Constants.expoConfig;
   return (
     <View style={styles.container}>
-      <Text>本地存储</Text>
+      <Text>当前环境是：{config?.extra?.env}</Text>
     </View>
   );
 }
