@@ -1,13 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
+import Constants from 'expo-constants';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const t = Constants.expoConfig;
+  console.log(t);
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>
-        Notice that the status bar has light text!
-      </Text>
-      <StatusBar style="light" />
+      <Text>本地存储</Text>
     </View>
   );
 }
@@ -15,7 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },

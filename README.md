@@ -49,8 +49,10 @@ npm run web
 ### Day 4 - 相机
 手机上运行
 
-### Day 5 - twitter进入动画
+### Day 5 - 拖动动画
 <img width="200" src="./gifs/day5.gif" alt="Day 5 twitter animation">
+
+
 
 
 

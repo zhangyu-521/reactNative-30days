@@ -75,12 +75,9 @@ export default function RootLayout() {
         <Stack.Screen name="day1" />
         <Stack.Screen name="day2" options={createPageOptions('轮播图')} />
         <Stack.Screen name="day3" />
-        <Stack.Screen
-          name="day4"
-          options={createPageOptions('Day 4 - Events')}
-        />
+        <Stack.Screen name="day4" options={createPageOptions('相机')} />
         <Stack.Screen name="day5" options={createPageOptions('拖动')} />
-        <Stack.Screen name="day6" />
+        <Stack.Screen name="day6" options={createPageOptions('本地存储')} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
