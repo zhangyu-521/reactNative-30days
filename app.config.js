@@ -56,6 +56,14 @@ module.exports = () => ({
             'The app accesses your photos to let you share them with your friends.',
         },
       ],
+      [
+        'expo-secure-store',
+        {
+          configureAndroidBackup: true,
+          faceIDPermission:
+            'Allow $(PRODUCT_NAME) to access your Face ID biometric data.',
+        },
+      ],
     ],
     experiments: {
       typedRoutes: true,

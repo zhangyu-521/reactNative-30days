@@ -4,6 +4,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text>点下按钮后的手机震动反馈</Text>
       <Text>Haptics.selectionAsync</Text>
       <View style={styles.buttonContainer}>
         <Button title="Selection" onPress={() => Haptics.selectionAsync()} />

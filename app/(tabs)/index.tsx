@@ -7,6 +7,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
+import Utils from '@/utils';
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -69,6 +70,13 @@ export default function HomeScreen() {
       description: '系统震动',
       route: '/day8' as const,
     },
+    {
+      icon: 'house.fill' as const,
+      iconColor: 'skyblue',
+      title: 'Day 9',
+      description: '抽屉',
+      route: '/day9' as const,
+    },
   ];
   type getKey = (typeof days)[number]['route'];
 
@@ -100,14 +108,7 @@ export default function HomeScreen() {
           />
         }
       >
-        <View
-          style={{
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'space-around',
-            gap: 8,
-          }}
-        >
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
           {days.map((item) => (
             <Pressable
               key={item.title}
@@ -140,13 +141,12 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   menu: {
-    width: '40%',
+    width: Utils.size.width / 3,
     height: 120,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
+    borderWidth: Utils.hairLine,
     borderColor: '#ccc',
-    borderRadius: 8,
     backgroundColor: '#f9f9f9',
   },
   titleContainer: {
