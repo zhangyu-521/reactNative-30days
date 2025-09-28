@@ -81,7 +81,7 @@ export default function HomeScreen() {
       icon: 'house.fill' as const,
       iconColor: 'skyblue',
       title: 'Day 10',
-      description: '头部',
+      description: '粘性头部动画',
       route: '/day10' as const,
     },
   ];
