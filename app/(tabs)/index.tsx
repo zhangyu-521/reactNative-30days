@@ -77,6 +77,13 @@ export default function HomeScreen() {
       description: '抽屉',
       route: '/day9' as const,
     },
+    {
+      icon: 'house.fill' as const,
+      iconColor: 'skyblue',
+      title: 'Day 10',
+      description: '头部',
+      route: '/day10' as const,
+    },
   ];
   type getKey = (typeof days)[number]['route'];
 

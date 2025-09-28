@@ -83,6 +83,7 @@ export default function RootLayout() {
           <Stack.Screen name="day7" options={createPageOptions('图片选择')} />
           <Stack.Screen name="day8" options={createPageOptions('系统振动')} />
           <Stack.Screen name="day9" />
+          <Stack.Screen name="day10" />
           <Stack.Screen name="+not-found" />
         </Stack>
         <StatusBar style="auto" />

@@ -52,6 +52,23 @@ npm run web
 ### Day 5 - 拖动动画
 <img width="200" src="./gifs/day5.gif" alt="Day 5 twitter animation">
 
+### Day 6 - 本地存储
+手机上运行
+
+### Day 7 - 选择图片
+手机 运行
+
+### Day 8 - 调用手机震动
+手机上运行
+
+### Day 9 - 抽屉
+
+### Day 10 - 粘性头部动画
+<img width="200" src="./gifs/day10.gif" alt="Day 10 sticky header animation">
+
+
+
+
 
 
 

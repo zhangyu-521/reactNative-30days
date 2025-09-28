@@ -20,8 +20,8 @@ async function getValueFor(key: string) {
 
 export default function App() {
   const config = Constants.expoConfig;
-  const [key, onChangeKey] = useState('Your key here');
-  const [value, onChangeValue] = useState('Your value here');
+  const [key, onChangeKey] = useState('key');
+  const [value, onChangeValue] = useState('value');
   return (
     <View style={styles.container}>
       <Text>
